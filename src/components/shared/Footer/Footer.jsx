@@ -4,9 +4,9 @@ const Footer = () => {
     return (
         <div className='max-w-7xl mx-auto'>
             <footer className=" p-10 grid grid-cols-3 bg-emerald-100">
-                <nav className='border'>
+                <nav className=''>
                     <header className="footer-title ">Events</header>
-                    <ul className='no-underline '>
+                    <ul>
                     <li>Services</li>
                     <li>Contact</li>
                     <li>About Us</li>
@@ -15,7 +15,7 @@ const Footer = () => {
                     </ul>
                     
                 </nav>
-                <nav className='border content-center'>
+                <nav className='content-center'>
                     <header className="footer-title">Follow Us :</header>
                     <div>
                     <img className='h-20 w-30' src={logo} alt="" />
@@ -27,14 +27,17 @@ const Footer = () => {
                     </div>
                     
                 </nav>
-                <nav className='border'>
+                <nav className=''>
                     <header className="footer-title">Legal</header>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <ul>
+                        <li>Terms of use</li>
+                        <li>Privacy policy</li>
+                        <li>Cookie policy</li>
+                    </ul>
+                    
                 </nav>
 
-                <div className='border col-span-3 text-center'><p className='text-center mt-10'>Copyright © 2023 - All right reserved</p></div>
+                <div className='mt-5 border-t-2 col-span-3 text-center'><p className='text-center mt-10'>Copyright © 2023 - All right reserved</p></div>
                 
 
             </footer>

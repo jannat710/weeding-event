@@ -1,0 +1,43 @@
+[
+    {"id": "1",
+        "name": "Entertainment",
+        "image": "https://i.ibb.co/pwzBVZc/entertainment.jpg",
+        "price": "$8,00",
+        "details": "We have a variety of options for entertainment, including live bands, DJs, and performers to keep your guests entertained throughout the event."
+      },
+      {
+        "id": "2",
+        "name": "Catering",
+        "image": "https://i.ibb.co/0cy9pK1/catering.jpg",
+        "price": "$4,000",
+        "details": "Our catering services offer a wide range of delicious food and beverage options, tailored to your preferences and dietary needs."
+      },
+      {
+        "id": "3",
+        "name": "Floral Arangement",
+        "image": "https://i.ibb.co/XbBtWk6/floral.jpg",
+        "price": "$1,500",
+        "details": "Our professional photographers will capture all the special moments of your wedding day, ensuring that you have beautiful memories to cherish."
+      },
+      {
+        "id": "4",
+        "name": "Reception",
+        "image": "https://i.ibb.co/17qKJXr/reception.jpg",
+        "price": "$3,000",
+        "details": " Our team will ensure a smooth and enjoyable reception experience for you and your guests."
+      },
+      { "id": "5",
+        "name": "Venue decoration",
+        "image": "https://i.ibb.co/M5F2H3c/venue.jpg",
+        "price": "$5,000",
+        "details": " Our team will ensure a smooth and enjoyable reception experience for you and your guests."
+      },
+      {
+        "id": "6",
+        "name": "Photography",
+        "image": "https://i.ibb.co/Pj4yRZG/photography.jpg",
+        "price": "$800",
+        "details": "Our experienced photographers will capture every precious moment of your special day."
+      }
+      
+]
