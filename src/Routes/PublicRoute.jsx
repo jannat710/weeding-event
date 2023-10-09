@@ -3,6 +3,8 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home/Home";
 import Services from "../components/Services/Services";
 import Login from "../components/Auth/Login/Login";
+import Photography from "../pages/Photography/Photography";
+import Rsvp from "../pages/RSVP/RSVP";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login></Login>
+            },
+            {
+                path: "/photography",
+                element: <Photography></Photography>
+            },
+            {
+                path: "/rsvp",
+                element: <Rsvp></Rsvp>
             }
         ]
     },
