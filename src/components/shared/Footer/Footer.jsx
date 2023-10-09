@@ -2,11 +2,11 @@ import logo from '../../../assets/logo.png'
 
 const Footer = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto font-display'>
             <footer className=" p-10 grid grid-cols-3 bg-emerald-100">
                 <nav className=''>
                     <header className="footer-title ">Events</header>
-                    <ul>
+                    <ul className='text-[#112A46]'>
                     <li>Services</li>
                     <li>Contact</li>
                     <li>About Us</li>
@@ -29,7 +29,7 @@ const Footer = () => {
                 </nav>
                 <nav className=''>
                     <header className="footer-title">Legal</header>
-                    <ul>
+                    <ul className='text-[#112A46]'>
                         <li>Terms of use</li>
                         <li>Privacy policy</li>
                         <li>Cookie policy</li>
@@ -37,7 +37,7 @@ const Footer = () => {
                     
                 </nav>
 
-                <div className='mt-5 border-t-2 col-span-3 text-center'><p className='text-center mt-10'>Copyright © 2023 - All right reserved</p></div>
+                <div className='mt-5 border-t-2 col-span-3 text-center text-[#112A46]'><p className='text-center mt-10'>Copyright © 2023 - All right reserved</p></div>
                 
 
             </footer>

@@ -10,7 +10,7 @@ const Navbar = () => {
                         <li><NavLink to="/gallery">Gallery</NavLink></li>
     </>
     return (
-        <div className="navbar bg-emerald-100 mb-5 shadow-lg">
+        <div className="navbar bg-emerald-100 mb-5 shadow-lg ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

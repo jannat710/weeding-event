@@ -3,7 +3,7 @@ import Footer from "../../components/shared/Footer/Footer";
 import Navbar from "../../components/shared/Navbar.jsx/Navbar";
 import Banner from "./Banner";
 import ServiceCard from "../../components/Services/ServiceCard";
-import Services from "../../components/Services/Services";
+
 
 
 const Home = () => {
