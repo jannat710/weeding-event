@@ -1,13 +1,13 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../assets/logo.png'
 
 const Navbar = () => {
     const links = <>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/services">Services</NavLink></li>
-                        <li><NavLink to="/blog">Blog</NavLink></li>
-                        <li><NavLink to="/login">Login</NavLink></li>
-                        <li><NavLink to="/gallery">Gallery</NavLink></li>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/services">Services</NavLink></li>
+        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
+        <li><NavLink to="/gallery">Gallery</NavLink></li>
     </>
     return (
         <div className="navbar bg-emerald-100 mb-5 shadow-lg ">
@@ -28,7 +28,14 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Register</a>
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                    <div className="w-10 rounded-full">
+                        <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    </div>
+                </label>
+                <Link>
+                    <button className='btn'>Login</button>
+                </Link>
             </div>
         </div>
     );

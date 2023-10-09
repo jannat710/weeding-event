@@ -3,6 +3,7 @@ import Footer from "../../components/shared/Footer/Footer";
 import Navbar from "../../components/shared/Navbar.jsx/Navbar";
 import Banner from "./Banner";
 import ServiceCard from "../../components/Services/ServiceCard";
+import Upcoming from "./Upcoming";
 
 
 
@@ -12,6 +13,7 @@ const Home = () => {
     return (
         <div>
             <Navbar></Navbar>
+            <Upcoming></Upcoming>
             <Banner></Banner>
             <div className="max-w-7xl mx-auto">
             <h1>This is Home</h1>
@@ -21,6 +23,8 @@ const Home = () => {
                     services.map(service=><ServiceCard key={service.id} services={service}></ServiceCard>)
                 }
             </div>
+
+           
            
             
             <Footer></Footer>
