@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 
 const ServiceSectionCard = ({ services }) => {
+    // eslint-disable-next-line no-unused-vars
     const {id, name, image, price, details } = services;
     return (
         <div>
