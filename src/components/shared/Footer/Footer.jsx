@@ -3,7 +3,7 @@ import logo from '../../../assets/logo.png'
 const Footer = () => {
     return (
         <div className='max-w-7xl mx-auto font-display'>
-            <footer className=" p-10 grid grid-cols-3 bg-emerald-100">
+            <footer className=" p-10 grid grid-cols-3 bg-primary">
                 <nav className=''>
                     <header className="footer-title ">Events</header>
                     <ul className='text-[#112A46]'>

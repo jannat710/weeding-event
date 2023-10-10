@@ -6,6 +6,7 @@ import Login from "../components/Auth/Login/Login";
 import Photography from "../pages/Photography/Photography";
 import Rsvp from "../pages/RSVP/RSVP";
 import Register from "../components/Auth/Register/Register";
+import Blog from "../pages/Blog/Blog";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                 path: "/rsvp",
                 element: <Rsvp></Rsvp>
+            },
+            {
+                path: "/blog",
+                element: <Blog></Blog>
             }
         ]
     },

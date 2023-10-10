@@ -3,15 +3,15 @@ import logo from '../../../assets/logo.png'
 
 const Navbar = () => {
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/blog">Blog</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
-        <li><NavLink to="/photography">Photography</NavLink></li>
-        <li><NavLink to="/rsvp">RSVP</NavLink></li>
+        <li className='text-white'><NavLink to="/">Home</NavLink></li>
+        <li className='text-white'><NavLink to="/services">Services</NavLink></li>
+        <li className='text-white'><NavLink to="/blog">Blog</NavLink></li>
+        <li className='text-white'><NavLink to="/login">Login</NavLink></li>
+        <li className='text-white'><NavLink to="/photography">Photography</NavLink></li>
+        <li className='text-white'><NavLink to="/rsvp">RSVP</NavLink></li>
     </>
     return (
-        <div className="navbar bg-emerald-100 mb-5 shadow-lg ">
+        <div className="navbar bg-primary mb-5 shadow-lg ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

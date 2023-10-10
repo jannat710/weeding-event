@@ -1,11 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 
 const Register = () => {
     const { createUser}=useContext(AuthContext);
+    const [registrationError,setRegistrationError]=useState("");
+    const [successMessage,setSuccessMessage]=useState("");
+
+    // setRegistrationError("");
+    // setSuccessMessage("");
 
 
     const handleRegister = e => {
@@ -15,15 +21,23 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, photo, email, password)
-        console.log(e.targeet)
+        console.log(e.target)
+
+        //password validation
+        if(password.length < 6 || !password.match(/[A-Z]/) || !password.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/)){
+            toast.error('Password must be less then 6 character and do not have capital letter and special character');
+            return;
+        }
 
 
         createUser(email,password)
-        .then(result=>{
+        .then((result)=>{
             console.log(result.user)
+            toast.success('Registration complete successfully');
         })
-        .catch(error=>{
+        .catch((error)=>{
             console.error(error)
+            toast.error(error.message);
         })
 
     }
@@ -65,6 +79,7 @@ const Register = () => {
                     </div>
                     
                 </form>
+                
                 <p className="text-center py-3">Already have an account please<Link to="/login" className="underline text-primary ml-5 "> Login</Link> </p>
             </div>
         </div>
