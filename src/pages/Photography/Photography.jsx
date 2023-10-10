@@ -14,7 +14,10 @@ import g12 from '../../assets/g12.jpg'
 const Photography = () => {
     return (
         
-        <div className=" w-full mx-auto p-5 gap-5 bg-base-100 shadow-xl image-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-lg">
+       <div>
+        <h1 className='font-display text-5xl text-center  font-bold'>Photography</h1>
+         <div className=" w-full mx-auto p-5 gap-5 bg-base-100 shadow-xl image-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-lg" >
+            
             <figure><img className='rounded-lg' src={g1} /></figure>
             <figure><img className='rounded-lg' src={g2} /></figure>
             <figure><img className='rounded-lg' src={g3} /></figure>
@@ -28,6 +31,7 @@ const Photography = () => {
             <figure><img className='rounded-lg' src={g11} /></figure>
             <figure><img className='rounded-lg' src={g12} /></figure>
         </div>
+       </div>
     );
 };
 

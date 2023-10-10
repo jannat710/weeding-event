@@ -7,11 +7,14 @@ import Photography from "../pages/Photography/Photography";
 import Rsvp from "../pages/RSVP/RSVP";
 import Register from "../components/Auth/Register/Register";
 import Blog from "../pages/Blog/Blog";
+import ErrorPage from "../components/Error/ErrorPage";
+import Servicedetail from "../components/Services/Servicedetail";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout></Layout>,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -21,6 +24,11 @@ const router = createBrowserRouter([
             {
                 path: "/services",
                 element: <Services></Services>,
+                loader:()=>fetch('/services.json') 
+            },
+            {
+                path:"/services/:details",
+                element:<Servicedetail></Servicedetail>,
                 loader:()=>fetch('/services.json') 
             },
             {
